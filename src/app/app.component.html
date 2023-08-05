@@ -1,11 +1,6 @@
 <section>
   <h5>TODO Application</h5>
   <ul>
-    <li>Item01</li>
-    <li>Item02</li>
-    <li>Item03</li>
-    <li>Item04</li>
-    <li>Item05</li>
-    <li>Item06</li>
+    <li *ngFor="let item of todoList">{{item}}</li>
   </ul>
 </section>
