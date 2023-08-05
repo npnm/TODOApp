@@ -23,6 +23,7 @@ export class AppComponent {
   }
 
   public onClose(item: string): void {
-    
+    const index = this.todoList.indexOf(item);
+    this.todoList.splice(index, 1);
   }
 }
