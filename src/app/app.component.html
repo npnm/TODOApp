@@ -1,6 +1,13 @@
 <section>
   <h5>TODO Application</h5>
   <ul>
-    <li *ngFor="let item of todoList">{{item}}</li>
+    <li *ngFor="let item of todoList">
+      <div>
+        <div style="display: inline;">{{item}}</div>
+        <div style="display: inline;">
+          <button (click)="onClose(item)">X</button>
+        </div>
+      </div>
+    </li>
   </ul>
 </section>

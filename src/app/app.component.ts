@@ -16,8 +16,13 @@ export class AppComponent {
     'Item6',
     'Item7',
     'Item8',
-  ]
+  ];
+
   constructor() {
 
+  }
+
+  public onClose(item: string): void {
+    
   }
 }
