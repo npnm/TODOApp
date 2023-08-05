@@ -24,7 +24,10 @@ export class AppComponent {
   }
 
   public onAddClick(): void {
-
+    if (this.newItem) {
+      this.todoList.push(this.newItem);
+      this.newItem = '';
+    }
   }
 
   public onClose(item: string): void {
