@@ -3,6 +3,10 @@
   <ul>
     <li *ngFor="let item of todoList">
       <div>
+        <input type="text"/>
+        <button>Add</button>
+      </div>
+      <div>
         <div style="display: inline;">{{item}}</div>
         <div style="display: inline;">
           <button (click)="onClose(item)">X</button>
