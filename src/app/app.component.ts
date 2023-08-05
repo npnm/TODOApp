@@ -16,8 +16,14 @@ export class AppComponent {
     'Item6',
     'Item7',
     'Item8',
-  ]
+  ];
+
   constructor() {
 
+  }
+
+  public onClose(item: string): void {
+    const index = this.todoList.indexOf(item);
+    this.todoList.splice(index, 1);
   }
 }
