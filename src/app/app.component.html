@@ -1,11 +1,11 @@
 <section>
   <h5>TODO Application</h5>
+  <div>
+    <input type="text" name="txtNewTodo" [(ngModel)]="newItem"/>
+    <button (click)="onAddClick()">Add</button>
+  </div>
   <ul>
     <li *ngFor="let item of todoList">
-      <div>
-        <input type="text" name="txtNewTodo" [(ngModel)]="newItem"/>
-        <button (click)="onAddClick()">Add</button>
-      </div>
       <div>
         <div style="display: inline;">{{item}}</div>
         <div style="display: inline;">
