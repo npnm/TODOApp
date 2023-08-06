@@ -17,9 +17,17 @@ export class AppComponent {
     'Item7',
     'Item8',
   ];
+  public newItem: string = '';
 
   constructor() {
 
+  }
+
+  public onAddClick(): void {
+    if (this.newItem) {
+      this.todoList.push(this.newItem);
+      this.newItem = '';
+    }
   }
 
   public onClose(item: string): void {
